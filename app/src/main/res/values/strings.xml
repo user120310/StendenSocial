@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Stenden Social</string>
+    <string name="title_activity_welcome">Welcome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="StendenMail">Stenden Mail</string>
+    <string name="Password" />
+    <string name="Password1" />
+    <string name="Password2">Password</string>
+    <string name="FirstN">First Name</string>
+    <string name="SecondN">Second Name\'</string>
+    <string name="SecondName">Second Name</string>
+    <string name="title_activity_message_board">MessageBoard</string>
+    <string name="message_board">Message Board</string>
+    <string name="First">First Name</string>
+</resources>

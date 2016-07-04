@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.codru.stendensocial.SignUp"
+    android:onClick="signUp"
+    android:background="@mipmap/back3">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/firstN"
+        android:hint="@string/First"
+        android:background="#65ffffff"
+        android:layout_above="@+id/secondN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/secondN"
+        android:hint="@string/SecondName"
+        android:background="#64ffffff"
+        android:layout_above="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="@string/Password2"
+        android:background="#64ffffff"
+        android:layout_above="@+id/imageButton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageButton2"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:onClick="chooseImage"
+        android:layout_above="@+id/mail"
+        android:layout_alignRight="@+id/mail"
+        android:layout_alignEnd="@+id/mail"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Profile Path"
+        android:id="@+id/textView4"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="35dp"
+        android:layout_alignBottom="@+id/imageButton2"
+        android:layout_toLeftOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:textColor="@color/abc_secondary_text_material_dark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/mail"
+        android:hint="@string/StendenMail"
+        android:background="#64ffffff"
+        android:layout_above="@+id/SignUp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:id="@+id/SignUp"
+        android:onClick="signUp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView3"
+        android:background="@mipmap/logo"
+        android:layout_above="@+id/firstN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:title="Home" />
+        <item
+            android:id="@+id/MessageBoard"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:title="Message Board" />
+        <item
+            android:id="@+id/About"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:title="About" />
+
+        <item
+            android:id="@+id/Chen"
+            android:textColor="@color/abc_primary_text_material_dark"
+            android:title="Tim" />
+    </group>
+
+</menu>

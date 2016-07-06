@@ -28,7 +28,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Discussion" />
         <activity android:name=".About" />
-        <activity android:name=".Home1"></activity>
+        <activity android:name=".Home1" />
+        <activity android:name=".Event" />
+        <activity android:name=".AddEvent"></activity>
     </application>
 
 </manifest>

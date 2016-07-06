@@ -31,7 +31,7 @@ public class UploadMessages extends AsyncTask<String,Void, String> {
        if(type == "Topic") {
            try {
                // String login_url = "http://www.bunte-bloecke.de/htdocsit4c/PHP/login.php";
-               String login_url = "http://192.168.43.164/uploadMessage.php";
+               String login_url = "http://192.168.1.85/uploadMessage.php";
                String stenden_mail = params[1];
                String message = params[2];
                URL url = new URL(login_url);
@@ -68,7 +68,7 @@ public class UploadMessages extends AsyncTask<String,Void, String> {
         {
             try {
                 // String login_url = "http://www.bunte-bloecke.de/htdocsit4c/PHP/login.php";
-                String login_url = "http://192.168.43.164/uploadMessage.php";
+                String login_url = "http://1192.168.1.85/uploadMessage.php";
                 String stenden_mail = params[1];
                 String message = params[2];
                 URL url = new URL(login_url);

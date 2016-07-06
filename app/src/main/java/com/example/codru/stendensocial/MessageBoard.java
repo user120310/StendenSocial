@@ -57,7 +57,7 @@ import java.net.*;
                 Looper.prepare();
                 while (true) {
                     try {
-                        String login_url = "http://192.168.43.164/message2.php";
+                        String login_url = "http://192.168.1.85/message2.php";
 
                         URL url = new URL(login_url);
                         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

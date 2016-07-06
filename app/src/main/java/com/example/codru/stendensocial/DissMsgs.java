@@ -30,7 +30,7 @@ public class DissMsgs  extends AsyncTask<String,Void, String> {
             try {
                 // String login_url = "http://www.bunte-bloecke.de/htdocsit4c/PHP/login.php";
                 String UserID = params[0];
-                String login_url = "http://192.168.43.164/discussion.php";
+                String login_url = "http://192.168.1.85/discussion.php";
                 String msg = params[1];
                 String itemID = params[2];
                 String StedenMAIL = params[3];

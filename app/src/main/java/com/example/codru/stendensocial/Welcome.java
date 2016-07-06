@@ -103,9 +103,9 @@ public class Welcome extends AppCompatActivity implements NavigationView.OnNavig
         } else if (id == R.id.About) {
             Intent i = new Intent(Welcome.this,About.class);
             startActivity(i);
-        } else if(id == R.id.Chen)
+        } else if(id == R.id.Event)
         {
-            Intent i = new Intent(Welcome.this,Discussion.class);
+            Intent i = new Intent(Welcome.this,Event.class);
             startActivity(i);
         }
 

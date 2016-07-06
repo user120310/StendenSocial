@@ -16,9 +16,9 @@
             android:title="About" />
 
         <item
-            android:id="@+id/Chen"
+            android:id="@+id/Event"
             android:textColor="@color/abc_primary_text_material_dark"
-            android:title="Tim" />
+            android:title="Event" />
     </group>
 
 </menu>

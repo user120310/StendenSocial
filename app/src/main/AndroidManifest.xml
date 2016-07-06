@@ -30,7 +30,8 @@
         <activity android:name=".About" />
         <activity android:name=".Home1" />
         <activity android:name=".Event" />
-        <activity android:name=".AddEvent"></activity>
+        <activity android:name=".AddEvent" />
+        <activity android:name=".ViewEvent"></activity>
     </application>
 
 </manifest>

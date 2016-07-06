@@ -33,5 +33,10 @@ public class Event extends AppCompatActivity {
             b.putExtra("date", date);
             startActivity(b);
     }
+
+    public void view(View d){
+        Intent f = new Intent(Event.this, ViewEvent.class);
+        startActivity(f);
+    }
     }
 

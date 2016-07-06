@@ -36,5 +36,6 @@
         android:id="@+id/view"
         android:layout_below="@+id/add"
         android:layout_alignRight="@+id/add"
-        android:layout_alignEnd="@+id/add" />
+        android:layout_alignEnd="@+id/add"
+        android:onClick="view" />
 </RelativeLayout>

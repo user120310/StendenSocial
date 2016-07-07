@@ -72,8 +72,19 @@
         android:layout_height="wrap_content"
         android:text="view attending"
         android:id="@+id/people"
-        android:layout_above="@+id/attending"
+        android:onClick="viewAttending"
+        android:layout_above="@+id/maybe"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="maybe"
+        android:id="@+id/maybe"
+        android:layout_above="@+id/attending"
+        android:layout_alignRight="@+id/attending"
+        android:layout_alignEnd="@+id/attending"
+        android:onClick="maybeAttending" />
 
 </RelativeLayout>

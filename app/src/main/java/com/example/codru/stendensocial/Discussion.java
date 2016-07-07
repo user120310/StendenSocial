@@ -51,7 +51,7 @@ public class Discussion extends ListActivity {
                 Looper.prepare();
                 while (true) {
                     try {
-                        String login_url = "http://192.168.1.85/message1.php";
+                        String login_url = "http://192.168.1.84/message1.php";
 
                         URL url = new URL(login_url);
                         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

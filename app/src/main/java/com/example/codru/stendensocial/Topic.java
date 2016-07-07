@@ -49,7 +49,7 @@ public class Topic  extends AsyncTask<String,Void, String> {
                 StendenMail = params[5];
                 topicMSGs = params[7];
                 //String login_url = "http://www.bunte-bloecke.de/htdocsit4c/PHP/login.php";
-                String login_url = "http://192.168.1.85/message1.php";
+                String login_url = "http://192.168.1.84/message1.php";
 
                 URL url = new URL(login_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();

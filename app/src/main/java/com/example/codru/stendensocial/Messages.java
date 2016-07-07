@@ -46,7 +46,7 @@ public class Messages extends AsyncTask<String,Void, String> {
                 username = params[1];
                 StendenMail = params[2];
                 //String login_url = "http://www.bunte-bloecke.de/htdocsit4c/PHP/login.php";
-                String login_url = "http://192.168.1.85/message2.php";
+                String login_url = "http://192.168.1.84/message2.php";
 
                 URL url = new URL(login_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();

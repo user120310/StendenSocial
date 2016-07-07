@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class AddEvent extends AppCompatActivity {
@@ -15,10 +16,16 @@ public class AddEvent extends AppCompatActivity {
     String time;
     String description;
     String date;
+    String day;
     EditText n;
     EditText y;
     EditText c;
     EditText m;
+    ArrayList<String> dayOfmonth = new ArrayList<>();
+    ArrayList<String> eventName = new ArrayList<>();
+    ArrayList<String> eventPlace = new ArrayList<>();
+    ArrayList<String> eventTime = new ArrayList<>();
+    ArrayList<String> eventDescription = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +36,13 @@ public class AddEvent extends AppCompatActivity {
         y = (EditText)findViewById(R.id.place);
         c = (EditText)findViewById(R.id.time);
         m = (EditText)findViewById(R.id.description);
-        String day = getIntent().getStringExtra("date");
-        TextView baka = (TextView)findViewById(R.id.Date);
+        day = getIntent().getStringExtra("date");
+        TextView baka = (TextView)findViewById(R.id.date);
         if(day == null){
             Calendar g = Calendar.getInstance();
 
-            baka.setText(g.get(Calendar.DAY_OF_MONTH) + "-" + (g.get(Calendar.MONTH)+1)
-                             + "-" + g.get(Calendar.YEAR)) ;
+            baka.setText(g.get(Calendar.DAY_OF_MONTH) + "/" + (g.get(Calendar.MONTH)+1)
+                             + "/" + g.get(Calendar.YEAR)) ;
         }
         else {
             baka.setText(day);
@@ -48,6 +55,23 @@ public class AddEvent extends AppCompatActivity {
     }
 
     public void addEvent(View c){
+        TextView baka = (TextView)findViewById(R.id.date);
+        if(day == null){
+            Calendar g = Calendar.getInstance();
 
+            dayOfmonth.add(g.get(Calendar.DAY_OF_MONTH) + "/" + (g.get(Calendar.MONTH)+1)
+                    + "/" + g.get(Calendar.YEAR));
+            eventName.add(name);
+            eventPlace.add(place);
+            eventTime.add(time);
+            eventDescription.add(description);
+        }
+        else {
+            dayOfmonth.add(day);
+            eventName.add(name);
+            eventPlace.add(place);
+            eventTime.add(time);
+            eventDescription.add(description);
+        }
     }
 }

@@ -31,7 +31,9 @@
         <activity android:name=".Home1" />
         <activity android:name=".Event" />
         <activity android:name=".AddEvent" />
-        <activity android:name=".ViewEvent"></activity>
+        <activity android:name=".ViewEvent" />
+        <activity android:name=".ShowEvent" />
+        <activity android:name=".Attending"></activity>
     </application>
 
 </manifest>

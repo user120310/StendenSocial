@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.codru.stendensocial.AddEvent">
+    tools:context="com.example.codru.stendensocial.ShowEvent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,51 +18,62 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/name"
         android:layout_below="@+id/date"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Event Name" />
+        android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
         android:id="@+id/place"
         android:layout_below="@+id/name"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Place" />
+        android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
         android:id="@+id/time"
         android:layout_below="@+id/place"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Time" />
+        android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
         android:id="@+id/description"
         android:layout_below="@+id/time"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Description" />
+        android:layout_alignParentStart="true" />
 
     <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="add event"
-        android:id="@+id/addevent"
-        android:layout_marginTop="93dp"
-        android:onClick="addEvent"
-        android:layout_below="@+id/description"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="attending"
+        android:id="@+id/attending"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="attending" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="view attending"
+        android:id="@+id/people"
+        android:layout_above="@+id/attending"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

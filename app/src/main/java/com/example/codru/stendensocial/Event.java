@@ -36,6 +36,7 @@ public class Event extends AppCompatActivity {
 
     public void view(View d){
         Intent f = new Intent(Event.this, ViewEvent.class);
+        f.putExtra("date", date);
         startActivity(f);
     }
     }
